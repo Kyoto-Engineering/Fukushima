@@ -1,0 +1,41 @@
+HTTrack3.48-22+htsswf+htsjava launched on Wed, 29 Nov 2017 19:00:40 at http://www.fukusima.co.jp/en/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.fukusima.co.jp/en/index.html -O1 "G:\Kyoto\Fukushima\Fukushima" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:01:46	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/share_img/arrow.gif (from www.fukusima.co.jp/en/css/share.css)
+19:01:46	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/share_img/o_arrow.gif (from www.fukusima.co.jp/en/css/share.css)
+19:01:46	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/share_img/list-style02.gif (from www.fukusima.co.jp/en/css/share02.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/share_img/list-style01.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_a01.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/bla/img/bg_a01.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_a02.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/bla/img/bg_a02.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_01-1.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_02-1.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_03-1.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_04-1.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_05-1.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_06-1.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_07-1.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_01-3.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_02-3.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_03-3.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_04-3.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_05-3.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_06-3.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_07-3.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_01-2.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_02-2.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_03-2.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_04-2.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_05-2.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_06-2.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/products/super/img/bg_07-2.gif (from www.fukusima.co.jp/en/css/products.css)
+19:02:00	Error: 	"Not Found" (404) at link www.fukusima.co.jp/en/share_img/list-style04.gif (from www.fukusima.co.jp/en/css/products.css)
+
+HTTrack Website Copier/3.48-22 mirror complete in 1 minutes 20 seconds : 146 links scanned, 115 files written (978615 bytes overall) [1023291 bytes received at 12791 bytes/sec], 13.2 requests per connection
+(30 errors, 0 warnings, 0 messages)

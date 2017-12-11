@@ -1,0 +1,69 @@
+/*------------------------------------------------
+[font-size M]CSS
+------------------------------------------------*/
+h2{
+	font-size:16px;
+	font-weight:bold;
+	}
+
+h3{
+	font-size:16px;
+	font-weight:bold;
+	}
+
+h4{
+	font-size:14px;
+	font-weight:bold;
+	}
+
+.cyushaku{
+	font-size:12px;
+	line-height:14px;
+	}
+
+table{
+	font-size: 14px;
+	line-height:20px;
+}
+
+.menu li{
+	background-position: 7px 13px;
+	font-size: 14px;
+/*	line-height:31px;*/
+}
+
+.adobe{
+	font-size: 12px;
+	line-height:15px;
+}
+
+.list,
+.list a:link,
+.list a:visited {
+	font-size: 14px;
+}
+
+.news li{
+	font-size: 14px;
+	line-height:25px;
+}
+
+.topic li{
+	font-size: 14px;
+	line-height:25px;
+}
+
+.pdfsave{
+	font-size:12px;
+	}
+
+.maincopy{
+	font-size: 14px;
+	line-height:18px;	
+}
+
+.maintext{
+	font-size: 14px;
+	line-height:20px;	
+}
+
