@@ -1,235 +1,226 @@
-<?php
-
-
-
-if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['Confirm'])){
-
-//mail from customer
-            $to_mail = "kawashima@keal.com.bd";   
-            $email_subject="Kawashima Product Inquiry";
-            
-            $email_message="Sent From   : ".$_POST['mailaddress']."\r\n".$_POST['']."\r".$_POST['']."\r\n".
-                   "Address         : ".$_POST['address']."\r\n".
-                   "Company         : ".$_POST['company']."\r\n".
-                   "Inquired By        : ".$_POST['username']."\r\n".
-                   "Phone No           : ".$_POST['phone']."\r\n".
-                   "Inquiry Type       : ".$_POST['inquiryType']."\r\n".
-                   "Product Type       : ".$_POST['ProductType']."\r\n".
-                  
-                   
-                   
-                   
-                  "Type of machine: " .$_POST['REQUIREMENT']."\r\n\r\n";
-                    
-                    
-            $headers = 'From: '.$_POST['mailaddress']."\r\n".
-                     'Reply-To:'.$_POST['mailaddress'] . "\r\n" .
-                     'X-Mailer: PHP/' . phpversion();
-
-            'Reply-To: '.$_POST['mailaddress']."\r\n" .
-
-            'Content-Type: text/html; charset=ISO-8859-1'."\r\n".
-
-            'MIME-Version: 1.0'."\r\n\r\n";
-
-            mail("<$to_mail>", "$email_subject","$email_message", "$headers"); 
-}        
-?>
-<script>
-function validateForm() {
-
-
-    var x = document.forms["inputForm"]["username"].value;
-    if (x == null || x == "") {
-        alert("please enter valid name");
-        return false;
-   }
-   
- 
-   
-      var x = document.forms["inputForm"]["company"].value;
-    if (x == null || x == "") {
-        alert("company must be fill out");
-        return false;
-   }
-   
-   
-     
-  
-   
-   var x = document.forms["inputForm"]["address"].value;
-    if (x == null || x == "") {
-        alert("please enter valid address");
-        return false;
-   }
-   
-   
-   var x = document.forms["inputForm"]["phone"].value;
-    if (! /^[0-9]{11}$/.test(x)) {
-  alert("Please input exactly 11 contact numbers!");
-  return false;
-}
-   
-   
-   
-    var x = document.forms["inputForm"]["mailaddress"].value;
-    if (x == null || x == "") {
-        alert("Please fill out the email field.");
-        return false;
-   }
-
-   var x = document.forms["inputForm"]["mailaddress"].value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address");
-        return false;
-    }
-    
-    
-
-   
- }
-</script>
 <html>
 <!-- Mirrored from www.kawashima-pack.co.jp/inquiry_e_ad/form_kawa_e_ad.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Oct 2017 03:14:43 GMT -->
-
 <head>
-
 <title>Thank you for your inquiry.</title>
-<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- base href="https://maneki.tactnet.co.jp/kawa-e/inquiry/" -->
-
-
 </head>
 <body bgcolor="#FFFFFF" text="#333333">
 
-<form method="post" action="">
+<form method="post" action="http://www.kawashima-pack.co.jp/cgi-bin/mpmail_e/mpmail.cgi">
 <input name="pg" value="2" type="hidden">
 
 <center>
 
 <table border="0" cellpadding="3" cellspacing="0" width="640">
-<tbody><tr><td bgcolor="#000066" align="center">
-  <font color="#FFFFFF" size="2">
-  <b>KAWASHIMA PACKAGING MACHINERY LTD.Inquiry.</b></font></td></tr>
+<tbody><tr> <TD align="center" bgcolor="#000099"><FONT color="#ffffff" 
+
+      size="3"><B>কাওয়াশিমা প্যাকেজিং মেশিন লিমিটেড।</B></FONT><BR>
+
+      <TABLE width="100%" border="0" cellspacing="0" cellpadding="2">
+
+        <TBODY>
+
+        <TR>
+
+          <TD bgcolor="#f0eded"><FONT color="#6666ff" size="2"><B>
+
+            <CENTER></CENTER></B></FONT></TD></TR></TBODY></TABLE></TD></tr>
 </tbody></table>
 <br>
 
 <table border="0" cellpadding="2" cellspacing="0">
-<tbody>
-<tr>
-<td valign="top"><font size="2"><b>(Note)</b></font></td>
-    <td>
-    <font size="2"><b>Please click "Confirm" button after filling the follwoing columns.</b></font></td></tr>
+<tbody><tr><td valign="top"><font size="2"><b>(বিঃদ্রঃ)</b></font></td>
+    <td><font size="2"><b>অনুসরণ কলাম ভর্তি পরে "নিশ্চিত করুন" বোতাম ক্লিক করুন।</b></font></td></tr>
 
-  <tr><td valign="top" align="right"><font color="#CC0000" size="2"><br></font></td>
-    <td><font color="#000000" size="2">Fields marked  <img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8">  must be completed.</font></td></tr>
+<tr><td valign="top" align="right"><font color="#CC0000" size="2"><br></font></td>
+    <td><font color="#000000" size="2">ক্ষেত্র চিহ্নিত  <img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> সম্পন্ন করা আবশ্যক।</font></td></tr>
 </tbody></table>
 <br>
 
+<table border="0" cellpadding="1" cellspacing="0" width="640">
 
+
+<tbody><tr><td align="center">
+	</td></tr>
+
+<tr><td align="center">
+	<table border="0" cellpadding="1" cellspacing="0">
+	<tbody><tr>
+	    <td><input name="cb11" value="Need the catalog" type="checkbox"><!--chk--></td>
+	    <td nowrap="nowrap"><font size="2">তালিকা প্রয়োজন  </font></td>
+	    <td><input name="cb12" value="Question" type="checkbox"><!--chk--></td>
+	    <td nowrap="nowrap"><font size="2">প্রশ্ন  </font></td>
+	    <td><input name="cb13" value="Sales Contact" type="checkbox"><!--chk--></td>
+	    <td nowrap="nowrap"><font size="2">বিক্রয় যোগাযোগ  </font></td>
+	    <td><input name="cb14" value="Other" type="checkbox"><!--chk--></td>
+	    <td nowrap="nowrap"><font size="2">অন্যান্য (নীচের তদন্ত কলাম বিস্তারিত বিবরণ দয়া করে।)  </font></td>
+	</tr>
+	</tbody></table>
+</td></tr>
+</tbody></table>
 <br>
-
-
-
-<form action="" method="post">
 
 <table border="0" cellpadding="1" cellspacing="0" width="640">
 <tbody><tr><td bgcolor="#3366CC" align="center">
-  <table border="0" cellpadding="3" cellspacing="1" width="100%">
+	<table border="0" cellpadding="3" cellspacing="1" width="100%">
 
-  <tbody><tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">Your name</font></td>
-      <td bgcolor="#FFFFFF"><input name="username" size="40" type="text"></td></tr>
+	<tbody><tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">তোমার নাম</font></td>
+	    <td bgcolor="#FFFFFF"><input name="tx14" size="40" type="text"></td></tr>
 
-  <tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">Company</font></td>
-      <td bgcolor="#FFFFFF"><input name="company" size="40" type="text"></td></tr>
+	<tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">কোম্পানি</font></td>
+	    <td bgcolor="#FFFFFF"><input name="tx11" size="40" type="text"></td></tr>
 
-  <tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">Address</font></td>
-      <td bgcolor="#FFFFFF">
+	<tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">ঠিকানা</font></td>
+	    <td bgcolor="#FFFFFF"><input name="tx19" size="20" type="text"></td></tr>
 
-      <input name="address" size="20" type="text"></td>
+	<tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">ফোন নম্বর.</font></td>
+	    <td bgcolor="#FFFFFF"><input name="tx15" size="40" type="text"></td></tr>
 
-      </tr>
-
-  <tr>
-
-  <td bgcolor="#EBE9E9" nowrap="nowrap">
-
-  <img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> 
-
-  <font size="2">Phone No.</font></td>
-      <td bgcolor="#FFFFFF">
-
-      <input name="phone" size="40" type="text">
-
-      </td></tr>
-
-  <tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">E-mail</font></td>
-      <td bgcolor="#FFFFFF"><input type="text" name="mailaddress" size="30"><br></td>
-      <tr><td bgcolor="#EBE9E9" nowrap="nowrap"><font size="2"> What type of machine you require</font></td>
-<td bgcolor="#EBE9E9">
-   <select  name="inquiryType">
-        <option value="" selected="selected">Please select.</option>
-        <option value="PackgingMachine">V.F.F.S Packging Machine</option>
-        <option value="FlowWrapper">H.F.F.S Flow Wrapper</option>
-        <option value="OverwrappingMachine">Overwrapping Machine</option>
-        <option value="CaseErector">Case Erector/Case Sealer</option>
-    </select>
-    </td>
-</tr> 
-
-<tr><td bgcolor="#EBE9E9" nowrap="nowrap"><font size="2"> What is your product</font></td>
-<td bgcolor="#EBE9E9">
-   <select  name="ProductType">
-        <option value="" selected="selected">Please select.</option>
-        <option value="Garments">Garments</option>
-        <option value="Cosmetics">Cosmetics</option>
-        <option value="Beverage">Beverage</option>
-        <option value="ProcessedFood">Processed Food</option>
-        <option value="RawFood">Raw Food</option>
-        <option value="Condiment">Condiment</option>
-        <option value="Medicine">Medicine</option>
-        <option value="Toys">Toys</option>
-        <option value="PlasticProducts">Plastic Products</option>
-        <option value="Utensils">Utensils</option>
-        <option value="FoodGrains">Food Grains</option>
-        <option value="Seeds">Seeds</option>
-        <option value="Fertilizer">Fertilizer</option>
-        <option value="Others">Others</option>
-    </select>
-    </td>
-</tr>    
-
-     <tr><td bgcolor="#EBE9E9" nowrap="nowrap" valign="top"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">Notes</font></td>
-      <td bgcolor="#FFFFFF"><textarea name="REQUIREMENT" rows="5" cols="50"></textarea></td></tr> 
-
+	<tr><td bgcolor="#EBE9E9" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-r.gif" alt="" height="8" width="8"> <font size="2">ই-মেইল</font></td>
+	    <td bgcolor="#FFFFFF"><input type="text" name="mailaddress" size="30"><br>
+            <font size="2">আবার নীচের নিশ্চিতকরণ ইনপুট জন্য</font><br>           
+             <input type="text" name="mailaddress2" size="30"></td></tr>
 
 
 <!--01 option start-->
-  
+	<tr><td colspan="2" bgcolor="#DEF8BE" nowrap="nowrap"><font size="2"><b>ভার্চুয়াল মেশিন</b></font></td></tr>
 
-  </tbody></table>
+	<tr><td bgcolor="#DEF8BE" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">
+
+     ব্যাগ প্রতি পণ্য ওজন: (জি)
+    </font></td>
+	    <td bgcolor="#DEF8BE"><input name="tx31" size="40" type="text"></td></tr>
+	    
+	<tr><td bgcolor="#DEF8BE" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">থলে আকার (
+LxWxH (মিমি))</font></td>
+	    <td bgcolor="#DEF8BE"><input name="tx32" size="40" type="text"></td></tr>
+	    
+	<tr><td bgcolor="#DEF8BE" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">প্যাকেজিং উপাদান</font></td>
+	    <td bgcolor="#DEF8BE"><input name="tx33" size="40" type="text"></td></tr>
+	    
+	<tr><td bgcolor="#DEF8BE" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">স্পীড প্রয়োজন</font></td>
+	    <td bgcolor="#DEF8BE"><input name="tx34" size="40" type="text"></td></tr>
+
+	<tr><td bgcolor="#DEF8BE" nowrap="nowrap" valign="top"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">প্রতিপালন পদ্ধতি</font></td>
+	    <td bgcolor="#DEF8BE">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr><td><input name="tx35" size="40" type="text"></td></tr>
+			</tbody></table>
+
+			<table border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td colspan="2"><font size="2"><b>আপনার প্যাকিং জন্য অপেক্ষাকৃত প্রয়োজনীয়তা</b></font></td></tr>
+
+			<tr><td><font size="2">&#183;একটি ব্যাগ উপর একটি উত্পাদন তারিখ টাইপিং</font></td>
+			    <td><input name="rb31" value="Yes" type="radio"><!--rb0--><font size="2">হ্যাঁ</font>
+				/<input name="rb31" value="No" type="radio"><!--rb1--><font size="2">না</font></td></tr>
+
+			<tr><td><font size="2">&#183;পণ্যের এর দীর্ঘ শেল লাইফ</font></td>
+			    <td><input name="rb32" value="Yes" type="radio"><!--rb0--><font size="2">হ্যাঁ</font>
+				/<input name="rb32" value="No" type="radio"><!--rb1--><font size="2">না</font></td></tr>
+
+			<tr><td><font size="2">&#183;পণ্য কভারেজ</font></td>
+			    <td><input name="rb33" value="Yes" type="radio"><!--rb0--><font size="2">হ্যাঁ</font>
+				/<input name="rb33" value="No" type="radio"><!--rb1--><font size="2">না</font></td></tr>
+			</tbody></table>
+	    </td></tr>
+
+<!--02 option start-->
+	<tr><td colspan="2" bgcolor="#F8F8BE" nowrap="nowrap"><font size="2"><b>অনুভূমিক মেশিন</b></font></td></tr>
+
+	<tr><td bgcolor="#F8F8BE" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">
+
+                  থলে আকার (LxWxH (মিমি))</font></td>
+	    <td bgcolor="#F8F8BE"><input name="tx36" size="40" type="text"></td></tr>
+	    
+	<tr><td bgcolor="#F8F8BE" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">প্যাকেজিং উপাদান</font></td>
+	    <td bgcolor="#F8F8BE"><input name="tx37" size="40" type="text"></td></tr>
+	    
+	<tr><td bgcolor="#F8F8BE" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">স্পীড প্রয়োজন</font></td>
+	    <td bgcolor="#F8F8BE"><input name="tx38" size="40" type="text"></td></tr>
+
+	<tr><td bgcolor="#F8F8BE" nowrap="nowrap" valign="top"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">প্রতিপালন পদ্ধতি</font></td>
+	    <td bgcolor="#F8F8BE">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr><td><input name="tx39" size="40" type="text"></td></tr>
+			</tbody></table>
+
+			<table border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td colspan="2"><font size="2"><b>আপনার প্যাকিং জন্য অপেক্ষাকৃত প্রয়োজনীয়তা</b></font></td></tr>
+
+			<tr><td><font size="2">&#183;দীর্ঘ শেল জীবন </font></td>
+			    <td><input name="rb34" value="Yes" type="radio"><!--rb0--><font size="2">হ্যাঁ</font>
+				/<input name="rb34" value="No" type="radio"><!--rb1--><font size="2">না</font></td></tr>
+
+			<tr><td valign="top" align="right"><font size="2">হ্যাঁ এর অন্তর্ভুক্ত, কিভাবে ব্যবহার করে? </font></td>
+			    <td><input name="rb35" value="N2GAS" type="radio"><!--rb0--><font size="2">নাইট্রোজেন গ্যাস</font><br>
+				<input name="rb35" value="OXYGEN ABSORBER" type="radio"><!--rb1--><font size="2">অক্সিজেন অ্যাবসর্বার </font></td></tr>
+
+			<tr><td valign="top"><font size="2">&#183;পণ্য প্রক্রিয়াকরণ পদ্ধতি</font></td>
+			    <td><input name="rb36" value="MANUAL" type="radio"><!--rb0--><font size="2">সারগ্রন্থ</font><br>
+				<input name="rb36" value="SEMI AUTO" type="radio"><!--rb1--><font size="2">আধা স্বয়ংক্রিয়</font><br>
+				<input name="rb36" value="FULLY AUTOMATION" type="radio"><!--rb2--><font size="2">সম্পূর্ণ স্বতঃস্ফূর্ততা </font></td></tr>
+
+			<tr><td><font size="2">&#183;একটি ব্যাগ উপর একটি উত্পাদন তারিখ টাইপিং</font></td>
+			    <td><input name="rb37" value="Yes" type="radio"><!--rb0--><font size="2">হ্যাঁ</font>
+				/<input name="rb37" value="No" type="radio"><!--rb1--><font size="2">না</font></td></tr>
+
+			<tr><td><font size="2">&#183;গাসেটেড শেষ ক্রাইম সীল</font></td>
+			    <td><input name="rb38" value="Yes" type="radio"><!--rb0--><font size="2">হ্যাঁ</font>
+				/<input name="rb38" value="No" type="radio"><!--rb1--><font size="2">না</font></td></tr>
+
+			<tr><td><font size="2">&#183;খাঁজ</font></td>
+			    <td><input name="rb39" value="Yes" type="radio"><!--rb0--><font size="2">হ্যাঁ</font>
+				/<input name="rb39" value="No" type="radio"><!--rb1--><font size="2">না</font></td></tr>
+
+			<tr><td valign="top" align="right"><font size="2">হ্যাঁ এর ক্ষেত্রে </font></td>
+			    <td><input name="rb40" value="V-SHAPE" type="radio"><!--rb0--><font size="2">ভি-আকৃতি</font><br>
+				<input name="rb40" value="I-SHAPE" type="radio"><!--rb1--><font size="2">আই-আকৃতি</font><br>
+				<input name="rb40" value="ZIG ZAG" type="radio"><!--rb2--><font size="2">আঁকাবাঁকা</font></td></tr>
+			</tbody></table>
+	</td></tr>
+
+<!--03 option start-->
+	<tr><td colspan="2" bgcolor="#FAE6FA" nowrap="nowrap"><font size="2"><b>মোড়ানো যন্ত্র</b></font></td></tr>
+
+	<tr><td bgcolor="#FAE6FA" nowrap="nowrap"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">পণ্য
+ আকার (LxWxH (মিমি))</font></td>
+	    <td bgcolor="#FAE6FA"><input name="tx40" size="40" type="text"></td></tr>
+
+	<tr><td bgcolor="#FAE6FA" nowrap="nowrap" valign="top"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">মোড়কে উপাদান</font></td>
+	    <td bgcolor="#FAE6FA">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr><td><input name="tx41" size="40" type="text"></td></tr>
+			</tbody></table>
+
+			<table border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td colspan="2"><font size="2"><b>আপনার প্যাকিং জন্য অপেক্ষাকৃত প্রয়োজনীয়তা</b></font></td></tr>
+
+			<tr><td><font size="2">&#183;একটি ব্যাগ উপর একটি উৎপাদন তারিখ টাইপিং</font></td>
+			    <td><input name="rb41" value="Yes" type="radio"><!--rb0--><font size="2">হ্যাঁ</font>
+				/<input name="rb41" value="No" type="radio"><!--rb1--><font size="2">না</font></td></tr>
+			</tbody></table>
+	</td></tr>
+
+	<tr><td bgcolor="#EBE9E9" nowrap="nowrap" valign="top"><img src="form_kawa_e_ad_files/dot-g.gif" alt="" height="8" width="8"> <font size="2">অন্যান্য প্রয়োজনীয় যদি কোনও</font></td>
+	    <td bgcolor="#FFFFFF"><textarea name="ta11" rows="5" cols="50"></textarea></td></tr>
+
+	</tbody></table>
 </td></tr>
 </tbody></table>
 <br>
 
 <table border="0" cellpadding="0" cellspacing="0" width="640">
 <tbody><tr><td align="center">
-  <input type="submit" name="Confirm"  value="Confirm"> 
-  
+	<input value="নিশ্চিত করা" type="submit"> | 
+	<input value="পুন:স্থাপন" type="reset">
 </td></tr>
 </tbody></table>
-
-</form>
-
-
-
 <br>
 
 <table border="0" cellpadding="0" cellspacing="0" width="640">
 <tbody><tr><td><hr size="1" noshade="noshade"></td></tr>
-<tr><td align="center"><font color="#777777" size="2">Copyright (C) Kyoto Engineering & Automation Ltd. All Rights Reserved.</font></td></tr>
+<tr><td align="center"><font color="#777777" size="2">কপিরাইট (সি) কিয়োটো ইঞ্জিনিয়ারিং এবং অটোমেশন লিমিটেড সর্বস্বত্ব সংরক্ষিত।</font></td></tr>
 </tbody></table>
 <br>
 
