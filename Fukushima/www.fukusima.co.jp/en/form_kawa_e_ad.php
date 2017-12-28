@@ -97,6 +97,7 @@ function validateForm() {
 <head>
 
 <title>Thank you for your inquiry.</title>
+ <link rel="shortcut icon" href="share_img/logo_icon2.png" />
 <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
 <!-- base href="https://maneki.tactnet.co.jp/kawa-e/inquiry/" -->
 
